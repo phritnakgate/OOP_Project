@@ -1,24 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Courses | CE MOOC</title>
-</head>
-<body>
-    <header>
-        <img>
-        <a href="#">หน้าหลัก</a>
-        <a href="#">เกี่ยวกับ</a>
-        <a href="#">คอร์สทั้งหมด</a>
-    </header>
+{% extends 'app_general/components/base.html' %}
+
+{% block site_title %}{{course_id}} | CE MOOC{% endblock %}
+
+{% block content%}
     <div>
        <h1 align="center">{{course_id}}</h1>
     </div>
-    <footer align="center">
-            <h5>This project made for 01076105_OOP @Computer Engineering KMITL</h5>
-    </footer>
-</body>
-</html>
+{% endblock %}

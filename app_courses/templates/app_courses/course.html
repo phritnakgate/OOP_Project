@@ -1,9 +1,17 @@
 {% extends 'app_general/components/base.html' %}
 
-{% block site_title %}{{course_id}} | CE MOOC{% endblock %}
+{% block site_title %}{{course.title}} | CE MOOC{% endblock %}
 
 {% block content%}
+{% if course is not None %}
     <div>
-       <h1 align="center">{{course_id}}</h1>
+       <h1 align="center">{{course.title}}</h1>
+        <p>
+            {% lorem %}
+        </p>
     </div>
+{% else %}
+    <h2>ERROR: ไม่พบคอร์ส</h2>
+{% endif %}
+
 {% endblock %}

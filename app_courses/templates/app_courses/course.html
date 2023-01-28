@@ -6,9 +6,9 @@
 {% if course is not None %}
     <div>
        <h1 align="center">{{course.title}}</h1>
-        <p>
-            {% lorem %}
-        </p>
+        <h2>รายละเอียดคอร์ส:</h2>
+        <p>รหัสวิชา: {{course.refcode}}</p>
+        <p>{{course.desc}}</p>
     </div>
 {% else %}
     <h2>ERROR: ไม่พบคอร์ส</h2>

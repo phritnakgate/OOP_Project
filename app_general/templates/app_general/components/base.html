@@ -1,3 +1,5 @@
+{% load static %}
+{% load bootstrap5 %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,6 +8,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block site_title %}CE MOOC{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'app_general/main.css' %}">
+    <link rel="stylesheet" href="{% static 'app_general/normalize.css' %}">
+    {% bootstrap_css %}
 </head>
 <body>
     {% include 'app_general/components/site_header.html' %}

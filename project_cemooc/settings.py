@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_general.apps.AppGeneralConfig',
-    'app_courses.apps.AppCoursesConfig'
+    'app_courses.apps.AppCoursesConfig',
+    'bootstrap5'
 ]
 
 MIDDLEWARE = [

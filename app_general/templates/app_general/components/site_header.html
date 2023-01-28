@@ -1,6 +1,31 @@
+{% load bootstrap5 %}
 <header>
-        <img>
-        <a href="{% url 'Home'%}">หน้าหลัก</a>
-        <a href="{% url 'About'%}">เกี่ยวกับ</a>
-        <a href="{% url 'Courses'%}">คอร์สทั้งหมด</a>
+       <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="{% url 'Home'%}">หน้าหลัก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'About'%}">เกี่ยวกับ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'Courses'%}">คอร์สทั้งหมด</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>

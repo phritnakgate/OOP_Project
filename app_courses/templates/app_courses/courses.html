@@ -6,7 +6,7 @@
     <div>
        <h1 align="center">Courses</h1>
         {% for course in all_courses %}
-            <h3><a href="{% url 'Course' course.id %}">{{course.title}}</a></h3>
+            <h3><a href="{% url 'Course' course.refcode %}">{{course.title}}</a></h3>
             <p>ผู้สอน: {{course.teacher}}</p>
         {% empty %}
             <p>ขณะนี้ยังไม่มีคอร์ส</p>

@@ -7,3 +7,10 @@
 <li>65010892 | ยงสุข ประเสริฐสุข</li>
 <li>65010594 | ปรเมศร์ เจียมบรรจง</li>
 <li>65010977 | วัชรินทร์ ดำทอง</li>
+
+***
+
+<h2>Requirements</h2>
+
+<li>[Database for our website]()</li>
+<li>MAMP</li>
